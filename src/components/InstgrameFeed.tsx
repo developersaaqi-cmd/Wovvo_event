@@ -23,7 +23,7 @@ const InstagramFeed = () => {
     const fetchInstagramMedia = async () => {
       try {
         const res = await fetch(
-          'https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,permalink,caption&access_token=IGAAHKoYxeZA3JBZAE41aDdyeVNjODNDLTBPc0U1NGcxaHM5UUhxenZAON0tWWGd3b05BVDkyUFQzT2w4eXBLTjgwWk50YTVTNFlRS0pxU2VWOVF5RnBMaTBXbGRfRFIwQ2ZAvU21xU0hSMTJHckJKaXByS3dn'
+          'https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,permalink,caption&access_token=IGAAHKoYxeZA3JBZAFQ4TU55NUZAXcEFRcmhyTXRXWl9PT1pHXzJWaFRrN3JPbHU4cEh0SDM5Um5JY0U2VjRXVDdqMllMdmJ4T1dxWDVYeGp0ZADNZANWg3UGtuWVhWYlRjcEFyOUI5ZAk5OdEVHNzZAQdVVXcE93'
         );
 
         const data = await res.json();
