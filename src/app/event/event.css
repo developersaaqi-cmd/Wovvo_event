@@ -380,12 +380,37 @@
     transition: 0.3s ease-in-out all;
 }
 
-#brands .colum-wrapper .logoes .item:hover img {
+/* #brands .colum-wrapper .logoes .item:hover img {
     filter: blur(0px);
 }
 
 #brands .colum-wrapper .logoes .item:hover {
     background: #FFFFFF;
+    box-shadow: 0px 14px 100px rgba(124, 16, 12, 0.16);
+} */
+
+#brands .colum-wrapper .logoes a:nth-child(1) img , #brands .colum-wrapper .logoes a:nth-child(2) img {
+    filter: blur(0px);
+}
+
+#brands .colum-wrapper .logoes .item img {
+    width: 56%;
+    object-fit: contain;
+}
+
+#brands .colum-wrapper .logoes a:nth-child(1) .item, #brands .colum-wrapper .logoes a:nth-child(2) .item {
+    background: #FFFFFF;
+}
+
+#brands .colum-wrapper .logoes a {
+    pointer-events: none;
+}
+
+#brands .colum-wrapper .logoes a:nth-child(1), #brands .colum-wrapper .logoes a:nth-child(2) {
+    pointer-events: unset;
+}
+
+#brands .colum-wrapper .logoes a:nth-child(1) .item:hover, #brands .colum-wrapper .logoes a:nth-child(2) .item:hover {
     box-shadow: 0px 14px 100px rgba(124, 16, 12, 0.16);
 }
 
@@ -1182,6 +1207,32 @@ main {
     mix-blend-mode: lighten;
 }
 
+#creator-ecnomy .creator-boxes .box .icon {
+    --size: 65px;
+    width: var(--size);
+    height: var(--size);
+    display: block;
+    border-radius: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#creator-ecnomy .creator-boxes .box .icon img {
+    width: 55%;
+}
+
+#creator-ecnomy .creator-boxes .box  div {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#creator-ecnomy .creator-boxes .box {
+    justify-content: space-between;
+}
+
 /* Responsive */
 
 @media (max-width: 1200px) {
@@ -1516,10 +1567,6 @@ main {
         border-radius: 20px;
     }
 
-    #brands .colum-wrapper .logoes .item:nth-last-child(1) {
-        display: none;
-    }
-
     #brands .colum-wrapper .form h3 {
         max-width: 80%;
         margin-bottom: 15px;
@@ -1535,5 +1582,17 @@ main {
 
     #ticket-cta.box-cat .culum-wrapper .image video {
         width: 70%;
+    }
+
+    #creator-ecnomy .creator-boxes .box div {
+        align-items: center;
+    }
+
+    #creator-ecnomy .creator-boxes .box div * {
+        text-align: center;
+    }
+
+    #creator-ecnomy .creator-boxes .box {
+        align-items: center;
     }
 }

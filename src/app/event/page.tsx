@@ -8,7 +8,7 @@ import InstagramFeed from './InstgrameFeed';
 
 const Page = () => {
   // Timmer --------------------------
-  const targetDate = new Date('2026-01-22T00:00:00Z').getTime();
+  const targetDate = new Date('2026-03-13T00:00:00Z').getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -141,6 +141,29 @@ const Page = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
+
+    // logoes array
+
+    const brands = [
+        { img: '/eventpage-assets/brand-icon/pr01.svg', link: 'https://itsblume.com/?srsltid=AfmBOopEwTON0_hawryx26cLqN5V4k46BdQ86k620TT9Acku-5Q89RMa' },
+        { img: '/eventpage-assets/brand-icon/pr02.jpg', link: 'https://awakechocolate.ca/' },
+        { img: '/eventpage-assets/brand-icon/1.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/2.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/3.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/4.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/5.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/6.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/7.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/8.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/9.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/10.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/11.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/12.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/13.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/14.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/15.png', link: 'javascript:void(0)' },
+        { img: '/eventpage-assets/brand-icon/16.png', link: 'javascript:void(0)' },
+    ];
 
   return (
     <main className="relative bg-white pt-24">
@@ -324,25 +347,31 @@ const Page = () => {
             </div>
             <div className="creator-boxes">
                 <div className="box">
-                    <span className='icon'><img src="/eventpage-assets/creator.svg" /></span>
-                    <h3>Creator</h3>
-                    <p>You want to land paid UGC deals, grow your portfolio, and connect with brands that value authentic creator content.</p>
+                    <div>
+                        <span className='icon'><img src="/eventpage-assets/creator.svg" /></span>
+                        <h3>Creator</h3>
+                        <p>You want to land paid UGC deals, grow your portfolio, and connect with brands that value authentic creator content.</p>
+                    </div>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grow Your Network
                     </button></a>
                 </div>
                 <div className="box">
-                    <span className='icon'><img src="/eventpage-assets/manager.svg" /></span>
-                    <h3>Talent Managers & Agencies</h3>
-                    <p>You’re looking to connect your roster with top brands, negotiate smarter deals, and stay ahead of UGC trends.</p>
+                    <div>
+                        <span className='icon'><img src="/eventpage-assets/manager.svg" /></span>
+                        <h3>Talent Managers & Agencies</h3>
+                        <p>You’re looking to connect your roster with top brands, negotiate smarter deals, and stay ahead of UGC trends.</p>
+                    </div>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Get The Edge
                     </button></a>
                 </div>
                 <div className="box">
-                    <span className='icon'><img src="/eventpage-assets/brand.svg" /></span>
-                    <h3>Brands & Retailers</h3>
-                    <p>You’re ready to meet creators in person, build genuine relationships, and walk away with ready-to-use UGC filmed on site.</p>
+                    <div>
+                        <span className='icon'><img src="/eventpage-assets/brand.svg" /></span>
+                        <h3>Brands & Retailers</h3>
+                        <p>You’re ready to meet creators in person, build genuine relationships, and walk away with ready-to-use UGC filmed on site.</p>
+                    </div>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Maximize Your ROI
                     </button></a>
@@ -361,10 +390,12 @@ const Page = () => {
                         </h3>
                     </div>
                     <div className="logoes">
-                        {[...Array(16)].map((_, i) => (
-                        <div className="item" key={i}>
-                            <img src={`/eventpage-assets/brand-icon/${i + 1}.png`} alt={`Brand ${i + 1}`} />
-                        </div>
+                        {brands.map((brand, i) => (
+                            <a href={brand.link} target="_blank" rel="noopener noreferrer">
+                                <div className="item" key={i}>
+                                    <img src={brand.img} alt={`Brand ${i + 1}`} />
+                                </div>
+                            </a>
                         ))}
                     </div>
                 </div>
