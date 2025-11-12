@@ -157,6 +157,7 @@ const Page = () => {
             </div>
             <div className="event-heading">
             <h2 className="gradient-text">Creators & Collabs</h2>
+            <p>March 12, Vancouver</p>
             </div>
         </section>
 
@@ -231,9 +232,9 @@ const Page = () => {
                         </h6>
                     </div>
 
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grab Your Ticket
-                    </button>
+                    </button></a>
                 </div>
 
                 <div className="form-wrapper">
@@ -326,25 +327,25 @@ const Page = () => {
                     <span className='icon'><img src="/eventpage-assets/creator.svg" /></span>
                     <h3>Creator</h3>
                     <p>You want to land paid UGC deals, grow your portfolio, and connect with brands that value authentic creator content.</p>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grow Your Network
-                    </button>
+                    </button></a>
                 </div>
                 <div className="box">
                     <span className='icon'><img src="/eventpage-assets/manager.svg" /></span>
                     <h3>Talent Managers & Agencies</h3>
                     <p>You’re looking to connect your roster with top brands, negotiate smarter deals, and stay ahead of UGC trends.</p>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Get The Edge
-                    </button>
+                    </button></a>
                 </div>
                 <div className="box">
                     <span className='icon'><img src="/eventpage-assets/brand.svg" /></span>
                     <h3>Brands & Retailers</h3>
                     <p>You’re ready to meet creators in person, build genuine relationships, and walk away with ready-to-use UGC filmed on site.</p>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Maximize Your ROI
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </section>
@@ -425,9 +426,9 @@ const Page = () => {
                 <div className="content">
                     <h3>Tickets Are Going Fast <br/>Secure Yours Now!</h3>
                     <p>180 tickets available grab yours before they’re gone!</p>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grab Your Tickets Now
-                    </button>
+                    </button></a>
                 </div>
                 <div className="image">
                     <img src="/eventpage-assets/ticketcta.png" />
@@ -466,9 +467,9 @@ const Page = () => {
                             <span className='text'>Full networking set up to connect with brands and other Creators</span>
                         </li>
                     </ul>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grow Your Network
-                    </button>
+                    </button></a>
                 </div>
                 <div className="img">
                     <img src="/eventpage-assets/space-img.png" />
@@ -488,9 +489,9 @@ const Page = () => {
                 <div className="heading">
                     <h3>Meet Local Creators &<br/> <span className='gradient-text'>Win Brand Deals</span></h3>
                     <p>Businesses are attending the event because they want to meet you and sign deals.</p>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Sale Now
-                    </button>
+                    </button></a>
                 </div>
                 <div className="cricle-wrapper">
                     <div className="circle-one cricle-wrapper-circle">
@@ -514,9 +515,9 @@ const Page = () => {
             <div className="heading">
                 <h5>What Creators</h5>
                 <h4>From Screen to Stage — Step<br/> <span className='gradient-text'>Into the Creator Experience</span></h4>
-                <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                     Grab Your Ticket
-                </button>
+                </button></a>
             </div>
             <span className='line'></span>
             <span className='gradient-shades'></span>
@@ -548,12 +549,20 @@ const Page = () => {
                 <div className="content">
                     <h3>Exclusive Experiences<br/> Reserved Only for Pass<br/> Holders</h3>
                     <p>Every pass holder gets a $350+ luxury gift bag packed with premium surprises.</p>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grab Your Tickets Now
-                    </button>
+                    </button></a>
                 </div>
                 <div className="image">
-                    <img src="/eventpage-assets/gift-box.png" />
+                    {/* <img src="/eventpage-assets/gift-box.png" /> */}
+                    <video
+                        src="/eventpage-assets/gift-box.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    >
+                    </video>
                 </div>
             </div>
         </section>
@@ -582,9 +591,9 @@ const Page = () => {
                         <li><span><img src="/eventpage-assets/li-icon.svg"/></span>Opportunity to host giveaways or sponsor prizes</li>
                         <li><span><img src="/eventpage-assets/li-icon.svg"/></span>Optional speaking opportunities on industry panels</li>
                     </ul>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJJgieptkcg2qv-eBpx2uclZ4OJAl02WgSVEGD-q7YIBcUWA/viewform?usp=header" target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Become a Brand Partner
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </section>
@@ -601,9 +610,9 @@ const Page = () => {
                         <br />
                         <span className="gradient-text">Photo Gallery</span>
                     </h4>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href="https://www.jlounge.ca/gallery" target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         View Full Gallery
-                    </button>
+                    </button></a>
                 </div>
 
                 {/* 🔹 Responsive Grid */}
@@ -650,9 +659,9 @@ const Page = () => {
                     <h5>Are you a business</h5>
                     <h3>Apply Here to Be a <br/>Business at The Event</h3>
                     <p>We have limited spaces still available</p>
-                    <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJJgieptkcg2qv-eBpx2uclZ4OJAl02WgSVEGD-q7YIBcUWA/viewform?usp=header" target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Apply Now
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </section>
