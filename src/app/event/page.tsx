@@ -118,7 +118,6 @@ const Page = () => {
         toast.success('Your entry has been submitted!');
         console.log('Brand Form Data:', brandForm);
 
-        // Reset form
         setBrandForm({
             firstName: '',
             lastName: '',
@@ -128,7 +127,7 @@ const Page = () => {
         });
     };
 
-    // Gallery Images
+    // Gallery Images -----------------------------
 
     const images = [
         '/eventpage-assets/gallery/1.jpg',
@@ -142,7 +141,7 @@ const Page = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
 
-    // logoes array
+    // logoes array -----------------------------
 
     const brands = [
         { img: '/eventpage-assets/brand-icon/pr01.svg', link: 'https://itsblume.com/?srsltid=AfmBOopEwTON0_hawryx26cLqN5V4k46BdQ86k620TT9Acku-5Q89RMa' },
@@ -180,7 +179,7 @@ const Page = () => {
             </div>
             <div className="event-heading">
             <h2 className="gradient-text">Creators & Collabs</h2>
-            <p>March 12, Vancouver</p>
+            <p>March 12, 2026 • Vancouver, BC • 5–8 PM</p>
             </div>
         </section>
 
@@ -203,7 +202,7 @@ const Page = () => {
             </div>
             <div className="sec">
                 <span className="number">{timeLeft.seconds}</span>
-                <span className="caption">Sec</span>
+                <span className="caption">Secs</span>
             </div>
             </div>
         </section>
@@ -218,7 +217,7 @@ const Page = () => {
                         Wovvo Creator
                         <br /> Meets <span className="gradient-text">Brands</span> 2026
                     </h3>
-                    <p>Where YVR Creators and Brands Connect in Real Life</p>
+                    <p>Where Vancouver’s top creators and brands connect in real life.</p>
 
                     <div className="infoboxes-wrapper">
                         <div className="icon-box">
@@ -233,25 +232,19 @@ const Page = () => {
 
                     <div className="content">
                         <p>
-                        Join 180 content creators, agencies, and brands for Vancouver’s
-                        first-ever <b>xUGC Creator Meets Brands Event</b> hosted by{' '}
-                        <b>Wovvo</b>.
+                        Join 180 content creators, agencies, and brands for Vancouver’s first-ever <b>UGC Creator Meets Brands Event,</b> hosted by <b>Wovvo.</b>
                         </p>
                         <p>
-                        A full day of connection, collaboration, and content creation
-                        designed to spark new partnerships, UGC deals, and industry
-                        relationships.
+                        Spend an evening of connection, collaboration, and content creation sparking new partnerships, land UGC deals, and build lasting industry relationships.
                         </p>
                         <p>
-                        Meet the brands you love, network with other creators, and walk
-                        away with valuable contacts, new opportunities, and fresh UGC
-                        content filmed live at the event.
+                        Meet the brands you love, network with creators, and walk away with fresh content filmed live.
                         </p>
                     </div>
 
                     <div className="tickets-li">
                         <h6>
-                        🎟️ <span className="gradient-text">180 tickets available</span> - grab yours before they’re gone!
+                        🎟️ <span className="gradient-text">180 tickets available</span>  — grab yours before they’re gone!
                         </h6>
                     </div>
 
@@ -261,8 +254,8 @@ const Page = () => {
                 </div>
 
                 <div className="form-wrapper">
-                    <h3>Join Pre-Sale Waitlist</h3>
-                    <p>Be the first to know when tickets drop — limited spots available!</p>
+                    <h3>Join the Pre-Sale Waitlist</h3>
+                    <p>Limited tickets available now!</p>
 
                     <form onSubmit={handleSubmit}>
                         <input
@@ -342,15 +335,15 @@ const Page = () => {
 
         <section id="creator-ecnomy" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
             <div className="heading-text">
-                <h3>Built For Every Part of The <span className="gradient-text">Creator Economy</span></h3>
-                <p>Creators, agencies, and brands come together here to collaborate, learn, and produce high-performing UGC that drives growth for all.</p>
+                <h3>Built for Every Part of the <span className="gradient-text">Creator Economy</span></h3>
+                <p>Creators, agencies, and brands come together to collaborate, learn, and create high-performing UGC that drives growth for everyone</p>
             </div>
             <div className="creator-boxes">
                 <div className="box">
                     <div>
                         <span className='icon'><img src="/eventpage-assets/creator.svg" /></span>
-                        <h3>Creator</h3>
-                        <p>You want to land paid UGC deals, grow your portfolio, and connect with brands that value authentic creator content.</p>
+                        <h3>Creators</h3>
+                        <p><b>Land</b> paid UGC deals, grow your portfolio, and connect with brands that value authentic content.</p>
                     </div>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grow Your Network
@@ -360,20 +353,20 @@ const Page = () => {
                     <div>
                         <span className='icon'><img src="/eventpage-assets/manager.svg" /></span>
                         <h3>Talent Managers & Agencies</h3>
-                        <p>You’re looking to connect your roster with top brands, negotiate smarter deals, and stay ahead of UGC trends.</p>
+                        <p><b>Connect</b> your roster with top brands, negotiate smarter deals, and stay ahead of UGC trends.</p>
                     </div>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
-                        Get The Edge
+                        Gain the Edge
                     </button></a>
                 </div>
                 <div className="box">
                     <div>
                         <span className='icon'><img src="/eventpage-assets/brand.svg" /></span>
                         <h3>Brands & Retailers</h3>
-                        <p>You’re ready to meet creators in person, build genuine relationships, and walk away with ready-to-use UGC filmed on site.</p>
+                        <p><b>Meet</b> creators in person, build genuine relationships, and leave with ready-to-use UGC filmed on site.</p>
                     </div>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
-                        Maximize Your ROI
+                        Maximize ROI
                     </button></a>
                 </div>
             </div>
@@ -475,19 +468,19 @@ const Page = () => {
             <div className="culum-wrapper">
                 <div className="content">
                     <h3>The Space Where <br/><span className="gradient-text">Connections Happen</span></h3>
-                    <p>The X Venue, Vancouver BC — modern, bright, and built for creators.</p>
+                    <p>The J Lounge Venue, Vancouver, BC — modern, bright, and designed for creators.</p>
                     <div className="notice-box">
-                        <p>Nestled in the heart of Vancouver, The X Venue sets the stage for creators and brands to collaborate in a space designed for content creation — open-concept, natural light, and 360° views of the city skyline.</p>
+                        <p>Nestled in the heart of downtown, the venue provides an open-concept space with natural light and 360° city views, perfect for networking and content creation.</p>
                     </div>
-                    <h4>Venue <span className="gradient-text">Highlights</span></h4>
+                    <h4>Venue <span className="gradient-text">Highlights:</span></h4>
                     <ul>
                         <li>
                             <span className='icon'><img src="/eventpage-assets/pin-icon.svg"/></span>
-                            <span className='text'>Located 1 minute from Granville Station</span>
+                            <span className='text'>1 minute from Granville Station</span>
                         </li>
                         <li>
                             <span className='icon'><img src="/eventpage-assets/coffe-icon.svg"/></span>
-                            <span className='text'>Surrounded by restaurants, cafés, and scenic waterfront</span>
+                            <span className='text'>Surrounded by cafés, restaurants, and waterfront views</span>
                         </li>
                         <li>
                             <span className='icon'><img src="/eventpage-assets/camera-icon.svg"/></span>
@@ -495,7 +488,7 @@ const Page = () => {
                         </li>
                         <li>
                             <span className='icon'><img src="/eventpage-assets/share-icon.svg"/></span>
-                            <span className='text'>Full networking set up to connect with brands and other Creators</span>
+                            <span className='text'>Full networking setup connecting brands and creators</span>
                         </li>
                     </ul>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
@@ -521,7 +514,7 @@ const Page = () => {
                     <h3>Meet Local Creators &<br/> <span className='gradient-text'>Win Brand Deals</span></h3>
                     <p>Businesses are attending the event because they want to meet you and sign deals.</p>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
-                        Sale Now
+                        Tickets On Sale Now
                     </button></a>
                 </div>
                 <div className="cricle-wrapper">
@@ -538,6 +531,30 @@ const Page = () => {
                         <img src="/eventpage-assets/circle-image/circle-three-3.svg" />
                         <img src="/eventpage-assets/circle-image/circle-three-5.svg" />
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="space" className='photoshot-sec max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-24'>
+            <div className="shadows">
+                <span></span>
+                <span></span>
+            </div>
+            <div className="culum-wrapper">
+                <div className="img">
+                    <img src="/eventpage-assets/professional.jpeg" />
+                </div>
+                <div className="content">
+                    <h3>Free Professional <br/><span className="gradient-text">Photoshoot with Your Ticket</span></h3>
+                    <div className="notice-box">
+                        <p>Every ticket includes a complimentary 15-minute professional photoshoot with our world-class photographers from the Vancouver Canucks.</p>
+                    </div>
+                    <p>You’ll receive 3 professionally edited photos — perfect for your portfolio, social media, or media kit.</p>
+                    <p>This $350+ value is yours free with your ticket!</p>
+                    <p>You’ll be asked to book your time slot before the event starts, so you can capture your best content without missing a moment of the event.</p>
+                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                        Reserve Your Ticket & Photoshoot
+                    </button></a>
                 </div>
             </div>
         </section>
@@ -687,8 +704,8 @@ const Page = () => {
             <div className="culum-wrapper">
                 <img src="/eventpage-assets/wovvo-icon.png" className='wovvo-icon-water' />
                 <div className="content">
-                    <h5>Are you a business</h5>
-                    <h3>Apply Here to Be a <br/>Business at The Event</h3>
+                    <h5>Are you a Business?</h5>
+                    <h3>Apply Here to be a Business<br/> Involved at Collabs vs Creators</h3>
                     <p>We have limited spaces still available</p>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJJgieptkcg2qv-eBpx2uclZ4OJAl02WgSVEGD-q7YIBcUWA/viewform?usp=header" target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Apply Now

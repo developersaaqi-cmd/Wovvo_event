@@ -1233,6 +1233,10 @@ main {
     justify-content: space-between;
 }
 
+.photoshot-sec .img img {
+    border-radius: 15px;
+}
+
 /* Responsive */
 
 @media (max-width: 1200px) {
@@ -1594,5 +1598,10 @@ main {
 
     #creator-ecnomy .creator-boxes .box {
         align-items: center;
+    }
+
+    #space.photoshot-sec .culum-wrapper {
+        flex-direction: column;
+        gap: 25px;
     }
 }
