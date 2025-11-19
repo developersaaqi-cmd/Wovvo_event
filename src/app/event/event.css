@@ -1611,4 +1611,8 @@ main {
         flex-direction: column;
         gap: 25px;
     }
+
+    #presale .colum-wrapper .content-box .infoboxes-wrapper .icon-box h5 {
+        font-size: 14px;
+    }
 }

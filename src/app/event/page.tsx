@@ -186,7 +186,7 @@ const Page = () => {
                         </div>
                         <div className="icon-box">
                         <img src="/eventpage-assets/location-icon.svg" alt="Location" />
-                        <h5>Vancouver, BC</h5>
+                        <h5>475 Granville Street 5-8 PM</h5>
                         </div>
                     </div>
 
