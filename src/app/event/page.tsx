@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './event.css';
 import toast, { Toaster } from 'react-hot-toast';
 import Lightbox from 'react-image-lightbox';
@@ -160,9 +160,46 @@ const Page = () => {
         { img: '/eventpage-assets/brand-icon/12.png', link: 'javascript:void(0)' },
         { img: '/eventpage-assets/brand-icon/13.png', link: 'javascript:void(0)' },
         { img: '/eventpage-assets/brand-icon/14.png', link: 'javascript:void(0)' },
-        { img: '/eventpage-assets/brand-icon/15.png', link: 'javascript:void(0)' },
-        { img: '/eventpage-assets/brand-icon/16.png', link: 'javascript:void(0)' },
+        // { img: '/eventpage-assets/brand-icon/15.png', link: 'javascript:void(0)' },
+        // { img: '/eventpage-assets/brand-icon/16.png', link: 'javascript:void(0)' },
     ];
+
+    // video Sound
+
+    // Desktop video state + ref
+    const [desktopAudioOn, setDesktopAudioOn] = useState(false);
+    const desktopVideoRef = useRef<HTMLVideoElement | null>(null);
+
+    // Mobile video state + ref
+    const [mobileAudioOn, setMobileAudioOn] = useState(false);
+    const mobileVideoRef = useRef<HTMLVideoElement | null>(null);
+
+    // Toggle desktop video only
+    const toggleDesktopAudio = () => {
+    const newState = !desktopAudioOn;
+    setDesktopAudioOn(newState);
+
+    if (desktopVideoRef.current) {
+        desktopVideoRef.current.muted = !newState;
+        if (newState) {
+        desktopVideoRef.current.play().catch(() => {});
+        }
+    }
+    };
+
+    // Toggle mobile video only
+    const toggleMobileAudio = () => {
+    const newState = !mobileAudioOn;
+    setMobileAudioOn(newState);
+
+    if (mobileVideoRef.current) {
+        mobileVideoRef.current.muted = !newState;
+        if (newState) {
+        mobileVideoRef.current.play().catch(() => {});
+        }
+    }
+    };
+
 
   return (
     <main className="relative bg-white pt-24">
@@ -374,6 +411,25 @@ const Page = () => {
 
         <section id="brands">
             <span className='shadow'></span>
+            <div className="from-audio-video" id="destop-video">
+                <span
+                    className={`audio-btn ${desktopAudioOn ? 'on' : ''}`}
+                    onClick={toggleDesktopAudio}
+                >
+                    <img src="/eventpage-assets/sound-on.png" className="audio-on" />
+                    <img src="/eventpage-assets/sound-off.png" className="audio-off" />
+                </span>
+
+                <video
+                    src="/eventpage-assets/form-video.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="destopvideo"
+                    ref={desktopVideoRef}
+                ></video>
+            </div>
             <div className="colum-wrapper max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
                 <div className="logoes-wrapper">
                     <div className="heading">
@@ -440,13 +496,25 @@ const Page = () => {
                         Submit Now
                         </button>
                     </form> */}
-                    <video
-                        src="/eventpage-assets/form-video.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                    ></video>
+                    <div className="from-audio-video" id="mobile-video">
+                        <span
+                            className={`audio-btn ${mobileAudioOn ? 'on' : ''}`}
+                            onClick={toggleMobileAudio}
+                        >
+                            <img src="/eventpage-assets/sound-on.png" className="audio-on" />
+                            <img src="/eventpage-assets/sound-off.png" className="audio-off" />
+                        </span>
+
+                        <video
+                            src="/eventpage-assets/form-video.mp4"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="destopvideo"
+                            ref={mobileVideoRef}
+                        ></video>
+                    </div>
                 </div>
             </div>
         </section>
