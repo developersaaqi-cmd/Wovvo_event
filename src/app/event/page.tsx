@@ -167,48 +167,8 @@ const Page = () => {
   return (
     <main className="relative bg-white pt-24">
 
-        <section id="event-banner">
-            <div className="banner-video">
-            <video
-                src="/eventpage-assets/banner-video.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-            ></video>
-            </div>
-            <div className="event-heading">
-            <h2 className="gradient-text">Creators & Collabs</h2>
-            <p>March 12, 2026 • Vancouver, BC • 5–8 PM</p>
-            </div>
-        </section>
-
-        <section id="timmersection" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
-            <h3>
-            Ready to <span className="gradient-text">Make It Happen?</span>
-            </h3>
-            <div className="box-wrapper">
-            <div className="days">
-                <span className="number">{timeLeft.days}</span>
-                <span className="caption">Days</span>
-            </div>
-            <div className="hours">
-                <span className="number">{timeLeft.hours}</span>
-                <span className="caption">Hours</span>
-            </div>
-            <div className="minutes">
-                <span className="number">{timeLeft.minutes}</span>
-                <span className="caption">Mins</span>
-            </div>
-            <div className="sec">
-                <span className="number">{timeLeft.seconds}</span>
-                <span className="caption">Secs</span>
-            </div>
-            </div>
-        </section>
-
-        <section id="presale">
-        <span className='shadow'></span>
+        <section id="presale" className='py-12 md:py-24'>
+            <span className='shadow'></span>
             <Toaster position="top-right" reverseOrder={false} />
 
             <div className="colum-wrapper max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -333,6 +293,46 @@ const Page = () => {
             </div>
         </section>
 
+        {/* <section id="event-banner">
+            <div className="banner-video">
+            <video
+                src="/eventpage-assets/banner-video.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+            ></video>
+            </div>
+            <div className="event-heading">
+            <h2 className="gradient-text">Creators & Collabs</h2>
+            <p>March 12, 2026 • Vancouver, BC • 5–8 PM</p>
+            </div>
+        </section> */}
+
+        <section id="timmersection" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3>
+            Level Up Your <span className="gradient-text">Creator Journey</span>
+            </h3>
+            <div className="box-wrapper">
+            <div className="days">
+                <span className="number">{timeLeft.days}</span>
+                <span className="caption">Days</span>
+            </div>
+            <div className="hours">
+                <span className="number">{timeLeft.hours}</span>
+                <span className="caption">Hours</span>
+            </div>
+            <div className="minutes">
+                <span className="number">{timeLeft.minutes}</span>
+                <span className="caption">Mins</span>
+            </div>
+            <div className="sec">
+                <span className="number">{timeLeft.seconds}</span>
+                <span className="caption">Secs</span>
+            </div>
+            </div>
+        </section>
+
         <section id="creator-ecnomy" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
             <div className="heading-text">
                 <h3>Built for Every Part of the <span className="gradient-text">Creator Economy</span></h3>
@@ -394,7 +394,7 @@ const Page = () => {
                 </div>
 
                 <div className="form">
-                    <h3>Brands In The Goodie Bag</h3>
+                    {/* <h3>Brands In The Goodie Bag</h3>
                     <p>Fill out this form to enter our goodie bags</p>
 
                     <form onSubmit={handleBrandSubmit}>
@@ -439,7 +439,14 @@ const Page = () => {
                         >
                         Submit Now
                         </button>
-                    </form>
+                    </form> */}
+                    <video
+                        src="/eventpage-assets/form-video.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    ></video>
                 </div>
             </div>
         </section>
@@ -545,7 +552,7 @@ const Page = () => {
                     <img src="/eventpage-assets/professional.jpeg" />
                 </div>
                 <div className="content">
-                    <h3>Free Professional <br/><span className="gradient-text">Photoshoot with Your Ticket</span></h3>
+                    <h3>Complimentary Professional <br/><span className="gradient-text">Headshots with Your Ticket</span></h3>
                     <div className="notice-box">
                         <p>Every ticket includes a complimentary 15-minute professional photoshoot with our world-class photographers from the Vancouver Canucks.</p>
                     </div>
@@ -553,7 +560,7 @@ const Page = () => {
                     <p>This $350+ value is yours free with your ticket!</p>
                     <p>You’ll be asked to book your time slot before the event starts, so you can capture your best content without missing a moment of the event.</p>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
-                        Reserve Your Ticket & Photoshoot
+                        Reserve Your Ticket & Headshot
                     </button></a>
                 </div>
             </div>
@@ -561,7 +568,7 @@ const Page = () => {
 
         <section id="creator-steps" className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className="heading">
-                <h5>What Creators</h5>
+                {/* <h5>What Creators</h5> */}
                 <h4>From Screen to Stage — Step<br/> <span className='gradient-text'>Into the Creator Experience</span></h4>
                 <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                     Grab Your Ticket
@@ -595,7 +602,7 @@ const Page = () => {
             <div className="culum-wrapper">
                 <img src="/eventpage-assets/wovvo-icon.png" className='wovvo-icon-water' />
                 <div className="content">
-                    <h3>Exclusive Experiences<br/> Reserved Only for Pass<br/> Holders</h3>
+                    <h3>Take Home a Gift Bag<br/> Loaded With Products<br/> From Our Sponsors</h3>
                     <p>Every pass holder gets a $350+ luxury gift bag packed with premium surprises.</p>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grab Your Tickets Now
@@ -617,7 +624,7 @@ const Page = () => {
 
         <section id="creator-steps" className='creator-steps-two max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className="heading">
-                <h5>What Brands</h5>
+                {/* <h5>What Brands</h5> */}
                 <h4>Turn Your Online Passion into <span className='gradient-text'>Real-World Partnerships</span></h4>
             </div>
             <span className='line'></span>
@@ -654,9 +661,9 @@ const Page = () => {
             <div className="content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
                 <div className="heading">
                     <h4>
-                        Have a Look at our
+                        Take a Peek Inside
                         <br />
-                        <span className="gradient-text">Photo Gallery</span>
+                        <span className="gradient-text">The Event Venue</span>
                     </h4>
                     <a href="https://www.jlounge.ca/gallery" target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         View Full Gallery
