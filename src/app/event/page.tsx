@@ -45,87 +45,87 @@ const Page = () => {
 
   // Jion Form -----------------------------
 
-  const [formData, setFormData] = useState({
-    firstName: '',
-    email: '',
-    uCreator: false,
-    influencer: false,
-    social: false,
-    policy: false,
-  });
+//   const [formData, setFormData] = useState({
+//     firstName: '',
+//     email: '',
+//     uCreator: false,
+//     influencer: false,
+//     social: false,
+//     policy: false,
+//   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value, type, checked } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value,
-    }));
-  };
+//   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     const { name, value, type, checked } = e.target;
+//     setFormData((prev) => ({
+//       ...prev,
+//       [name]: type === 'checkbox' ? checked : value,
+//     }));
+//   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+//   const handleSubmit = (e: React.FormEvent) => {
+//     e.preventDefault();
 
-    if (!formData.firstName.trim() || !formData.email.trim()) {
-      toast.error('Please fill in all required fields.');
-      return;
-    }
+//     if (!formData.firstName.trim() || !formData.email.trim()) {
+//       toast.error('Please fill in all required fields.');
+//       return;
+//     }
 
-    if (!formData.policy) {
-      toast.error('You must accept the policy to proceed.');
-      return;
-    }
+//     if (!formData.policy) {
+//       toast.error('You must accept the policy to proceed.');
+//       return;
+//     }
 
-    toast.success('Thanks! You are on the waitlist.');
-    console.log('Form Data:', formData);
+//     toast.success('Thanks! You are on the waitlist.');
+//     console.log('Form Data:', formData);
 
-    setFormData({
-        firstName: '',
-        email: '',
-        uCreator: false,
-        influencer: false,
-        social: false,
-        policy: false,
-    });
+//     setFormData({
+//         firstName: '',
+//         email: '',
+//         uCreator: false,
+//         influencer: false,
+//         social: false,
+//         policy: false,
+//     });
 
-    };
+//     };
 
     // Brand Form -----------------------------
 
-    const [brandForm, setBrandForm] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: '',
-    });
+    // const [brandForm, setBrandForm] = useState({
+    //     firstName: '',
+    //     lastName: '',
+    //     email: '',
+    //     phone: '',
+    //     message: '',
+    // });
 
-    const handleBrandChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setBrandForm((prev) => ({
-        ...prev,
-        [name]: value,
-        }));
-    };
+    // const handleBrandChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    //     const { name, value } = e.target;
+    //     setBrandForm((prev) => ({
+    //     ...prev,
+    //     [name]: value,
+    //     }));
+    // };
 
-    const handleBrandSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
+    // const handleBrandSubmit = (e: React.FormEvent) => {
+    //     e.preventDefault();
 
-        if (!brandForm.firstName.trim() || !brandForm.lastName.trim() || !brandForm.email.trim()) {
-        toast.error('Please fill in all required fields.');
-        return;
-        }
+    //     if (!brandForm.firstName.trim() || !brandForm.lastName.trim() || !brandForm.email.trim()) {
+    //     toast.error('Please fill in all required fields.');
+    //     return;
+    //     }
 
-        toast.success('Your entry has been submitted!');
-        console.log('Brand Form Data:', brandForm);
+    //     toast.success('Your entry has been submitted!');
+    //     console.log('Brand Form Data:', brandForm);
 
-        setBrandForm({
-            firstName: '',
-            lastName: '',
-            email: '',
-            phone: '',
-            message: '',
-        });
-    };
+    //     setBrandForm({
+    //         firstName: '',
+    //         lastName: '',
+    //         email: '',
+    //         phone: '',
+    //         message: '',
+    //     });
+    // };
 
     // Gallery Images -----------------------------
 
@@ -251,81 +251,62 @@ const Page = () => {
                 </div>
 
                 <div className="form-wrapper">
-                    <h3>Join the Pre-Sale Waitlist</h3>
+                    <h3>UGC Creators Limited tickets available now!</h3>
                     <p>Limited tickets available now!</p>
 
-                    <form onSubmit={handleSubmit}>
+                    <form>
                         <input
-                        type="text"
-                        placeholder="First Name"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
+                            type="text"
+                            placeholder="First Name"
+                            name="firstName"
                         />
+
                         <input
-                        type="email"
-                        placeholder="Email Address"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
+                            type="email"
+                            placeholder="Email Address"
+                            name="email"
                         />
 
                         <h4>I am a...</h4>
                         <div className="checkobox-wrapper">
-                        <div className="checkbox-wrapper">
-                            <input
-                            type="checkbox"
-                            id="u-creator"
-                            name="uCreator"
-                            checked={formData.uCreator}
-                            onChange={handleChange}
-                            />
+                            <div className="checkbox-wrapper">
+                            <input type="checkbox" id="u-creator" />
                             <label htmlFor="u-creator">UCG Creator</label>
-                        </div>
-                        <div className="checkbox-wrapper">
-                            <input
-                            type="checkbox"
-                            id="influencer"
-                            name="influencer"
-                            checked={formData.influencer}
-                            onChange={handleChange}
-                            />
+                            </div>
+                            <div className="checkbox-wrapper">
+                            <input type="checkbox" id="influencer" />
                             <label htmlFor="influencer">Influencer</label>
-                        </div>
-                        <div className="checkbox-wrapper">
-                            <input
-                            type="checkbox"
-                            id="social"
-                            name="social"
-                            checked={formData.social}
-                            onChange={handleChange}
-                            />
+                            </div>
+                            <div className="checkbox-wrapper">
+                            <input type="checkbox" id="social" />
                             <label htmlFor="social">Social Media Manager</label>
-                        </div>
+                            </div>
                         </div>
 
-                        <button
-                        type="submit"
-                        className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors"
+                        {/* DIRECT REDIRECT BUTTON */}
+                        <a
+                            href="https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400"
+                            target="_blank"
+                            className="form-a"
+                            rel="noopener noreferrer"
                         >
-                        Get Notified When Tickets Are On Sale
-                        </button>
+                            <button
+                            type="button"
+                            className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors"
+                            >
+                            Lock In Your Ticket
+                            </button>
+                        </a>
 
                         <div className="checkbox-wrapper">
-                        <input
-                            type="checkbox"
-                            id="policy"
-                            name="policy"
-                            checked={formData.policy}
-                            onChange={handleChange}
-                        />
-                        <label htmlFor="policy">
+                            <input type="checkbox" id="policy" />
+                            <label htmlFor="policy">
                             I agree to receive emails from Wovvo. By signing up, I accept
                             Wovvo’s Terms of Service and Privacy Policy. I understand that I
                             can unsubscribe at any time.
-                        </label>
+                            </label>
                         </div>
-                    </form>
+                        </form>
                 </div>
             </div>
         </section>
@@ -373,7 +354,7 @@ const Page = () => {
         <section id="creator-ecnomy" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
             <div className="heading-text">
                 <h3>Built for Every Part of the <span className="gradient-text">Creator Economy</span></h3>
-                <p>Creators, agencies, and brands come together to collaborate, learn, and create high-performing UGC that drives growth for everyone</p>
+                <p>Creators, agencies, and brands come together to collaborate, learn, and create high-performing UGC that drives growth for everyone.</p>
             </div>
             <div className="creator-boxes">
                 <div className="box">
@@ -402,8 +383,8 @@ const Page = () => {
                         <h3>Brands & Retailers</h3>
                         <p><b>Meet</b> creators in person, build genuine relationships, and leave with ready-to-use UGC filmed on site.</p>
                     </div>
-                    <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
-                        Maximize ROI
+                    <a href='https://docs.google.com/forms/d/1HYABo8WLrbP9bzSscmZ3MPFBmzU5FFWVYwC1G9tOHO4/edit' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                        Business Registration
                     </button></a>
                 </div>
             </div>
@@ -671,7 +652,7 @@ const Page = () => {
                 <img src="/eventpage-assets/wovvo-icon.png" className='wovvo-icon-water' />
                 <div className="content">
                     <h3>Take Home a Gift Bag<br/> Loaded With Products<br/> From Our Sponsors</h3>
-                    <p>Every pass holder gets a $350+ luxury gift bag packed with premium surprises.</p>
+                    <p>Every pass holder gets a $350+ gift bag packed with products from event partners.</p>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Grab Your Tickets Now
                     </button></a>
@@ -781,7 +762,7 @@ const Page = () => {
                 <div className="content">
                     <h5>Are you a Business?</h5>
                     <h3>Apply Here to be a Business<br/> Involved at Collabs vs Creators</h3>
-                    <p>We have limited spaces still available</p>
+                    <p>We have limited spaces still available.</p>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJJgieptkcg2qv-eBpx2uclZ4OJAl02WgSVEGD-q7YIBcUWA/viewform?usp=header" target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Apply Now
                     </button></a>
@@ -794,7 +775,7 @@ const Page = () => {
             <span className='shadow'></span>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mx-auto mb-10">
-                <h2 className="text-[25px] font-semibold text-primary tracking-wide">Follow Us on Instagram</h2>
+                <h2 className="text-[25px] font-semibold text-primary tracking-wide">Follow us on Instagram</h2>
                 <p className="mt-2 text-[40px] font-bold">
                 See What We've <span className="gradient-text">Been Working On</span>
                 </p>

@@ -1305,6 +1305,10 @@ main {
     opacity: 0;
 }
 
+.form-a button {
+    width: 100%;
+}
+
 /* Responsive */
 
 @media (max-width: 1200px) {
