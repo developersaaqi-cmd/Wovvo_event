@@ -1774,4 +1774,8 @@ main {
     #bussines-cta .culum-wrapper .content h3 br {
         display: none;
     }
+
+    #gallery .heading h4 {
+        text-align: center;
+    }
 }
