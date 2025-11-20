@@ -1326,6 +1326,14 @@ main {
     text-decoration: underline;
 }
 
+#ticket-cta .culum-wrapper .content {
+    padding-right: 0px;
+}
+
+#ticket-cta .culum-wrapper .content h3 {
+    font-size: 40px;
+}
+
 /* Responsive */
 
 @media (max-width: 1200px) {
@@ -1527,7 +1535,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 50px 15px 0 15px;
+        padding: 50px 15px 0 15px !important;
     }
 
     #space .culum-wrapper {display: flex;flex-direction: column-reverse;}

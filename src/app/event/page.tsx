@@ -415,8 +415,8 @@ const Page = () => {
                 <div className="logoes-wrapper">
                     <div className="heading">
                         <h3>
-                        Brands Attending
-                        <br /> At <span className="gradient-text">The Event</span>
+                        Brands in Creators
+                        <br /><span className="gradient-text">Goodie Bag</span>
                         </h3>
                     </div>
                     <div className="logoes">
@@ -504,10 +504,10 @@ const Page = () => {
             <div className="culum-wrapper">
                 <img src="/eventpage-assets/wovvo-icon.png" className='wovvo-icon-water' />
                 <div className="content">
-                    <h3>Tickets Are Going Fast <br/>Secure Yours Now!</h3>
-                    <p>180 tickets available grab yours before they’re gone!</p>
+                    <h3>Everyone Who Takes Content <br/>Creation Serious Will Be There!</h3>
+                    <p>180 creators. 15+ brands. One night where deals and learning actually happen. If you're not in the room, you're missing out.</p>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
-                        Grab Your Tickets Now
+                        Secure Spot
                     </button></a>
                 </div>
                 <div className="image">
@@ -524,7 +524,7 @@ const Page = () => {
             <div className="culum-wrapper">
                 <div className="content">
                     <h3>The Space Where <br/><span className="gradient-text">Connections Happen</span></h3>
-                    <p>The J Lounge Venue, Vancouver, BC — modern, bright, and designed for creators.</p>
+                    <p>The J Lounge Venue, Vancouver, BC, modern, bright and designed for networking.</p>
                     <div className="notice-box">
                         <p>Nestled in the heart of downtown, the venue provides an open-concept space with natural light and 360° city views, perfect for networking and content creation.</p>
                     </div>
@@ -548,7 +548,7 @@ const Page = () => {
                         </li>
                     </ul>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
-                        Grow Your Network
+                        Grab Creator Ticket
                     </button></a>
                 </div>
                 <div className="img">
