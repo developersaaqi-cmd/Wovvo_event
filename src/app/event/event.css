@@ -1309,6 +1309,23 @@ main {
     width: 100%;
 }
 
+#pr-links {
+    gap: 8px !important;
+}
+
+#pr-links label {
+    font-size: 10px !important;
+}
+
+#pr-links #policy:before {
+    --size: 14px;
+    border-radius: 3px;
+}
+
+#pr-links a {
+    text-decoration: underline;
+}
+
 /* Responsive */
 
 @media (max-width: 1200px) {

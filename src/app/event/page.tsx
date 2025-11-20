@@ -298,11 +298,11 @@ const Page = () => {
                             </button>
                         </a>
 
-                        <div className="checkbox-wrapper">
+                        <div className="checkbox-wrapper" id='pr-links'>
                             <input type="checkbox" id="policy" />
                             <label htmlFor="policy">
                             I agree to receive emails from Wovvo. By signing up, I accept
-                            Wovvo’s Terms of Service and Privacy Policy. I understand that I
+                            Wovvo’s <a href='https://www.wovvo.ai/terms-and-conditions' target='_blank'>Terms of Service</a> and <a href='https://www.wovvo.ai/privacy-policy' target='_blank'>Privacy Policy</a>. I understand that I
                             can unsubscribe at any time.
                             </label>
                         </div>
