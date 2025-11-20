@@ -252,7 +252,7 @@ const Page = () => {
 
                 <div className="form-wrapper">
                     <h3>UGC Creators Limited tickets available now!</h3>
-                    <p>Limited tickets available now!</p>
+                    {/* <p>Limited tickets available now!</p> */}
 
                     <form>
                         <input

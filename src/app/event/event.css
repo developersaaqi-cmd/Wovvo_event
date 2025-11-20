@@ -1703,4 +1703,75 @@ main {
     #brands .colum-wrapper .logoes a:nth-last-child(1) {
         display: none;
     }
+
+    #brands .colum-wrapper .logoes-wrapper h3 {
+        text-align: center;
+    }
+
+    #creator-steps .colum-wrapper .content h5 {
+        text-align: center;
+        line-height: 1.4em;
+    }
+
+    #gallery .heading {
+        align-items: center;
+    }
+
+    #creator-steps .colum-wrapper .content p {
+        text-align: center;
+    }
+
+    #creator-steps .colum-wrapper ul {
+        align-items: center;
+    }
+
+    #creator-steps .colum-wrapper .content {
+        align-items: center;
+    }
+
+    #creator-steps .heading h4 {
+        text-align: center;
+    }
+
+    #creator-steps .heading {
+        align-items: center;
+    }
+
+    #space .culum-wrapper h3 {
+        text-align: center;
+    }
+
+    #space .culum-wrapper h3 br {
+        display: none;
+    }
+
+    #space .culum-wrapper .content .notice-box p {
+        text-align: center;
+    }
+
+    #space .culum-wrapper p {
+        text-align: center;
+    }
+
+    #space .culum-wrapper .content {
+        align-items: center;
+    }
+
+    #space .culum-wrapper .content ul {
+        align-items: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #space .culum-wrapper .content ul li {
+        align-items: flex-start;
+    }
+
+    #timmersection h3 {
+        text-align: center;
+    }
+
+    #bussines-cta .culum-wrapper .content h3 br {
+        display: none;
+    }
 }
