@@ -329,7 +329,7 @@ const Page = () => {
 
         <section id="timmersection" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3>
-            Level Up Your <span className="gradient-text">Creator Journey</span>
+            Land your Next <span className="gradient-text">Collab May 14, 2026</span>
             </h3>
             <div className="box-wrapper">
             <div className="days">
