@@ -1778,4 +1778,8 @@ main {
     #gallery .heading h4 {
         text-align: center;
     }
+
+    #space .culum-wrapper p {
+        max-width: 320px;
+    }
 }
