@@ -8,7 +8,7 @@ import InstagramFeed from './InstgrameFeed';
 
 const Page = () => {
   // Timmer --------------------------
-  const targetDate = new Date('2026-03-13T00:00:00Z').getTime();
+  const targetDate = new Date('2026-05-16T00:00:00Z').getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -219,7 +219,7 @@ const Page = () => {
                     <div className="infoboxes-wrapper">
                         <div className="icon-box">
                         <img src="/eventpage-assets/calender-icon.svg" alt="Calendar" />
-                        <h5>March 12, 2026</h5>
+                        <h5>May 14, 2026</h5>
                         </div>
                         <div className="icon-box">
                         <img src="/eventpage-assets/location-icon.svg" alt="Location" />
@@ -504,7 +504,7 @@ const Page = () => {
             <div className="culum-wrapper">
                 <img src="/eventpage-assets/wovvo-icon.png" className='wovvo-icon-water' />
                 <div className="content">
-                    <h3>Everyone Who Takes Content <br/>Creation Serious Will Be There!</h3>
+                    <h3>The Night Every <br/>Serious Creator Shows Up.</h3>
                     <p>180 creators. 15+ brands. One night where deals and learning actually happen. If you're not in the room, you're missing out.</p>
                     <a href='https://buy.stripe.com/bJe8wQ1tK27Q8eK0Rzds400' target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Secure Spot
@@ -632,7 +632,7 @@ const Page = () => {
                     <img src="/eventpage-assets/0101.png" alt="" />
                 </div>
                 <div className="img">
-                    <img src="/eventpage-assets/0202.png" alt="" />
+                    <a href='https://www.instagram.com/p/DRNI1rfERm1/' target='_blank'><img src="/eventpage-assets/0202.png" alt="" /></a>
                 </div>
                 <div className="content">
                     <img src="/eventpage-assets/0303.png" alt="" />
@@ -689,7 +689,7 @@ const Page = () => {
                 <div className="content">
                     <p>Build real relationships with the creators shaping today’s content economy. Find talent, film partnerships, and collect fresh UGC all in one day.</p>
                     <ul>
-                        <li><span><img src="/eventpage-assets/li-icon.svg"/></span>200+ creators attending from multiple niches</li>
+                        <li><span><img src="/eventpage-assets/li-icon.svg"/></span>180+ creators attending from multiple niches</li>
                         <li><span><img src="/eventpage-assets/li-icon.svg"/></span>Dedicated networking sessions and booth space</li>
                         <li><span><img src="/eventpage-assets/li-icon.svg"/></span>Access to creator portfolios and media kits</li>
                         <li><span><img src="/eventpage-assets/li-icon.svg"/></span>Opportunity to host giveaways or sponsor prizes</li>
@@ -760,8 +760,8 @@ const Page = () => {
             <div className="culum-wrapper">
                 <img src="/eventpage-assets/wovvo-icon.png" className='wovvo-icon-water' />
                 <div className="content">
-                    <h5>Are you a Business?</h5>
-                    <h3>Apply Here to be a Business<br/> Involved at Collabs vs Creators</h3>
+                    <h5>Are You a Business?</h5>
+                    <h3>Apply Here to Be a Business<br/> Involved at Creator Meets Brands</h3>
                     <p>We have limited spaces still available.</p>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJJgieptkcg2qv-eBpx2uclZ4OJAl02WgSVEGD-q7YIBcUWA/viewform?usp=header" target='_blank'><button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
                         Apply Now
